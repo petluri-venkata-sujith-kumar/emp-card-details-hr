@@ -1,0 +1,126 @@
+:root{
+    --bgcolor-btn:#eb5424;
+    --bgcolor-card:#f8fafb;
+}
+.empContainer{
+    width: 100%;
+}
+.empContainer .createEmp{
+    padding: 1em;
+    text-align: end;
+    font-size: 1.2em;
+    margin: 0.3em;
+}
+.empContainer .createEmp span{
+    background-color: var(--bgcolor-btn);
+    padding: 0.6em;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+.empcard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+.wrapper{
+    border: 2px solid var(--bgcolor-card);
+    box-shadow: 2px 2px 3px var(--bgcolor-card);
+    border-radius: 10px;
+    width: 20em;
+    padding: 1em;
+    background-color: var(--bgcolor-card);
+}
+.wrapper img{
+    height: 4em;
+    width: 4em;
+    border-radius: 100%;
+}
+.empDetails{
+    display: flex;
+    gap: 0.2em;
+    flex-direction: column;
+}
+.empimg{
+    border-right: 2px solid var(--bgcolor-card);
+    position: relative;
+    padding-left: 2em;
+}
+.info .info_icons{
+    position: relative;
+    top: 0.2em;
+}
+.empDetails .name{
+    font-size: 1.8em;
+    /* text-align: center; */
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.empDetails .info{
+    position: relative;
+    /* width: 100%; */
+    padding: 1em;
+    padding-top: 1.5em;
+    line-height: 1.3em;
+    font-size: 1.2em;
+    background-color: #fff;
+    border-radius: 5px;
+    font-weight: 200;
+    color: #111111cb;
+}
+ .role{
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+.status{
+    position: absolute;
+    top: 1.6em;
+    left: 3.5em;
+    font-size: 1.5em;
+}
+
+
+.edit_icon{
+    position: absolute;
+    top: 0.4em;
+    left: 13em;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 1em;
+}
+
+.tooltip{
+    visibility: hidden;
+    background-color: #fff;
+    padding: 0.2em;
+    color: var(--bgcolor-btn);
+    text-transform: capitalize;
+}
+.viewMore{
+    position: absolute;
+    top: 0.5em;
+    left: 11em;
+    width: 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.edit_icon:hover .tooltip{
+    visibility: visible;
+    position: absolute;
+    display:flex ;
+    font-size: 0.8em;
+    left: -0.3em;
+    border-radius: 5px;
+}
+.viewMore:hover .tooltip{
+    visibility: visible;
+    display: flex;
+    width: 5em;
+    position: absolute;
+    left: -1.4em;
+    font-size: 0.7em;
+    border-radius: 5px;
+}
